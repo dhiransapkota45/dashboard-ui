@@ -4,7 +4,7 @@ import { BsArrowRightShort, BsArrowDownShort } from "react-icons/bs"
 
 
 const DropDown = ({ icon, name, path, dropdown, index }) => {
-    const [dropdownToggle, setDropdownToggle] = useState(() => localStorage.getItem("down") == "true" ? true : false)
+    const [dropdownToggle, setDropdownToggle] = useState(() => localStorage.getItem("down") === "true" ? true : false)
     const drop = useRef(null)
     const handleDropdown = () => {
         localStorage.setItem("down", !dropdownToggle)
