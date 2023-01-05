@@ -15,7 +15,7 @@ const Transaction = () => {
                   return (
                       <tr key={index} className="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700">
                         <td className="px-6 py-4 whitespace-nowrap  "> <div className='flex items-center'>
-                          <img className='w-12 h-12 mr-2  rounded-full' src={userdata.image} />
+                          <img className='w-12 h-12 mr-2  rounded-full' src={userdata.image} alt="image_link" />
 
                           {userdata.name}</div></td>
                         <td className="  px-6 py-4 whitespace-nowrap">
