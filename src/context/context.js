@@ -4,7 +4,7 @@ export const ToggleContext = createContext();
 
 const ContextFunc = (props) => {
   const func = () => {
-    if (localStorage.getItem("darkmode") == "true") {
+    if (localStorage.getItem("darkmode") === "true") {
       return true;
     } else {
       return false;
